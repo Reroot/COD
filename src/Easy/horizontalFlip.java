@@ -17,39 +17,34 @@ import java.util.Arrays;
 public class horizontalFlip {
 	public static void main(String[] args) {
 
-		flipH(new int[][] {{7,8,9},{4,5,6},{1,2,3}});
-		flipH(new int[][] {{1,0,1},{1,0,1}});
-		flipH(new int[][] {{0,0,1},{1,0,0}});
-		flipH(new int[][] {{1}});
-		flipH(new int[][] {{7,8,9},{4,5,6},{1,2,3}});
+		flipHorizontalAxis(new int[][] {{7,8,9},{4,5,6},{1,2,3}});
+		flipHorizontalAxis(new int[][] {{1,0,1},{1,0,1}});
+		flipHorizontalAxis(new int[][] {{0,0,1},{1,0,0}});
+		flipHorizontalAxis(new int[][] {{1}});
+		flipHorizontalAxis(new int[][] {{7,8,9},{4,5,6},{1,2,3}});
 
 	}
 	// record: fail but correct?
-	private static void flipH(int[][] arr) {
-		int row = arr.length - 1; int col = arr[0].length - 1; 
-		//outward from 0,0 method, only need 
-		//and form the end
-		//half the rows
-		int temp = 0;
-		for(int i = 0;i<= row/2;i++) {
-			for(int j = 0;j<=col;j++) {
-				//i and j start form 0,0, and we can use rows and col as
-				// n, n end swap
-				temp = arr[i][j];
-				//overwrite what we temped
-				arr[i][j] = arr[row-1][j]; //the bottom level is accesed
-				arr[row-1][j] = temp;
-				//0
-				//1 <-
-			}
-		}
-        for (int[] r : arr) {
+	public static void flipHorizontalAxis(int[][] matrix) {
+	    int rows = matrix.length-1; //DO ROWS FIRST IN FOR LOOPS
+	    int col = matrix[0].length-1;
+	    for(int i = 0;i<=rows/2;i++) { //we need to reverse from top to bottom, halfway of the rows, but all the columbs,
+	        for(int j = 0;j<=col;j++) {
+	            int temp = matrix[i][j]; //this is the start, j is col, we will go through all so it will just inc, but rows will b row-j, inc 
+	            matrix[i][j] = matrix[rows-i][j];
+	            matrix[rows-i][j] = temp;
+	            
+	        }
+	    }
+	    
+        for (int[] r : matrix) {
             // converting each row as string 
             // and then printing in a separate line 
             System.out.println(Arrays.toString(r));
 
         }
-		
 	}
+
+
 
 }
