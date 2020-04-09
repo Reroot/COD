@@ -33,7 +33,6 @@ public class horizontalFlip {
 	            int temp = matrix[i][j]; //this is the start, j is col, we will go through all so it will just inc, but rows will b row-j, inc 
 	            matrix[i][j] = matrix[rows-i][j];
 	            matrix[rows-i][j] = temp;
-	            
 	        }
 	    }
 	    
