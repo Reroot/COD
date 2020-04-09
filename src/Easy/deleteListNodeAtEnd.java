@@ -3,7 +3,19 @@ package Easy;
 public class deleteListNodeAtEnd {
 	// java.util.* and java.util.streams.* have been imported for this problem.
 	// You don't need any other imports.
-
+	public ListNode deleteAtTail(ListNode head) {
+	        ListNode prev = null;
+	        ListNode curr = head;
+	        if(curr == null || curr.next == null) return null;
+	        while(curr.next.next != null) {
+	            prev = curr;
+	            curr = curr.next;
+	        }
+	        curr.next = null;
+	        prev = curr;
+	        return head;
+	    
+	}
 //ephpianay list nodes refrences share the same pointer,
 //not give an extra one
 	

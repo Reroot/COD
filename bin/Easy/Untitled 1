@@ -1,0 +1,79 @@
+Accenture Log
+
+
+What are you looking for the company that you are applying?  
+Answer Question
+Hard experience and how did you manage?  
+1 Answer
+What are you gonna be 5 years from now?  
+Tell me something about yourself that's not on your resume.
+Tell me about a time where you had a different idea than your
+ peers and you had to convince them to follow your idea.  
+Describe a situation where you had to work with a poorly functioning team, and how did you overcome this? 
+What product do we make at Accenture? He then said, "This was a trick question we don't make anything."
+Asked a lot of questions about their company and wanted me to explain what their company does.  
+
+--1
+Questions on SQL,Joins,
+
+Normalization  
+Normalization is a systematic approach of decomposing tables 
+to eliminate data redundancy(repetition) and undesirable 
+characteristics like Insertion, Update and Deletion Anomalies. 
+It is a multi-step process that puts data into tabular form, 
+removing duplicated data from the relation tables.
+
+What is a class?
+What is Object Oriented Programming(OOP)?
+What is the most difficult situation you have faced in a project and what did you do to solve it?
+What are the most important things you consider when doing a project?  
+
+describe access modifiers in Java  
+What is collision in OOP?   determine whether two objects come in contact with each other.
+Stay Confident and prepare basic technical questions on algorithms and data 
+structure and key points in SDLC
+
+Q Difference between Black box and White box?
+Q Difference between Regression and Retest
+What are some of the advantages to using OOD?  
+How will you implement indian railway reservation system?  
+What are the three OOP parts?   Encapsulation, Inheritance, and Polymorphism
+Technical Interview: done over the phone i was asked basic
+ java OOP Q's such as what is OOP? what is Inheritance? 
+ Give me example of Inheritance? Advantages of using OOP?
+  what projects you have worked on? describe you role? any
+   issues you encountered in the project? -- lasted 30-40 
+   mins.
+
+
+
+Merge sort algorithm**
+
+Describe a situation where you got 
+stack out of memory error
+ and how you handled it  
+ ---
+ Tree Traversal for inorder,preorder and postorder  
+ --- 
+ inorder= left,root,right
+ preorder= root,left,right
+ postorder= left,right, root(last thing is back to root)
+ 
+(a) Inorder (Left, Root, Right) : 4 2 5 1 3 (last thing is right, sorted order)
+(b) Preorder (Root, Left, Right) : 1 2 4 5 3, just go along the way until we right
+(c) Postorder (Left, Right, Root) : 4 5 2 3 1, (root is last visted)
+
+
+Different between Method Overloading and Method Overriding
+
+
+Accessibility Within Assembly	Accessibility Outside Assembly
+Scope	In the same class	In the inherited classes
+Purpose	Handy for the program design as different method names need not to be remembered	Handy for program design as different method names need not be remembered. But its implementation needs to be specific to the derived class
+Signature of methods	Different for each method overloaded	Has to be same in the derived class as in the base class
+Types of methods	Instance and static methods	Instance methods only
+Return Type	Can be same or different as it is not considered	Always needs to be same
+
+
+Gave a situation for designing a data model. Very simple though.
+Simple OOPS questions.

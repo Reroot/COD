@@ -5,6 +5,7 @@ public class fibonnaciNumber {
 	public int fibOneRecursive(int n) {
 	    if(n == 0) return 0;
 	    if(n == 1) return 1;
+	    //summartions start at the bottom - upwards
 	    return fibOneRecursive(n-1)+fibOneRecursive(n-2);
 	}
 	
