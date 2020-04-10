@@ -22,13 +22,14 @@ public static String compressString(String text) {
 	    //after weve tracked all the elements
 	    Set<Character> cv = h.keySet();
 	    for(char c : cv) {
-	        sb.append(c);
+	        sb.append(c); //need the char instance regardless
 	        if(h.get(c) > 1) {
-	            sb.append(h.get(c)); //then append the number instead 
+	            sb.append(h.get(c)); //then append the number of occourance instead 
 	        } 
 	    }
 	    return sb.toString();
 	}
+	
 	
 	
 	public static void main(String[] args) {
