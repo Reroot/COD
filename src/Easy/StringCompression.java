@@ -5,17 +5,14 @@ import java.util.Set;
 
 public class StringCompression {
 	
-	// java.util.* and java.util.streams.* have been imported for this problem.
-	// You don't need any other imports.
-	//TRY ONE, THINGS CUT OFF IN THE END
-	public static String compressString(String text) {
+public static String compressString(String text) {
 	    
 	    HashMap<Character, Integer> h = new HashMap<Character, Integer>();
 	    //key is chars, value is the count, that the look up. use get of the current key to get the count.
 	    //then build the new String if it apears.
 	    StringBuilder sb = new StringBuilder();
 	    char[] ctexta = text.toCharArray();
-	    for(int i = 0;i<ctexta.length-1;i++) {
+	    for(int i = 0;i<ctexta.length;i++) {
 	        if(!h.containsKey(ctexta[i])) {
 	            h.put(ctexta[i], 1);
 	        } else {
