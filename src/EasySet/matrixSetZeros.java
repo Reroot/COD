@@ -1,5 +1,9 @@
 package EasySet;
-class Solution {
+
+import java.util.HashSet;
+import java.util.Set;
+
+class setZeroesA {
     public void setZeroes(int[][] matrix) {
       int R = matrix.length;
       int C = matrix[0].length;
