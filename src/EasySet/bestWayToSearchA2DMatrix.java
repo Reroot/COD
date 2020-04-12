@@ -1,5 +1,5 @@
 package EasySet;
-class Solution {
+class bestWayToSearchA2DMatrix {
     public boolean searchMatrix(int[][] matrix, int target) {
         //rxc if (target is < matrix[row][matrix[0].length-1])
         //search the row, else row ++
