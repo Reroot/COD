@@ -48,6 +48,30 @@ public class isIsomorphic {
 //		return ss1.equals(ss2);
 	}
 	
+//CLOSER BUT USE EQUALS, THIS IS 2ND TRY
+public static boolean isIsomorphic(String input1, String input2) {
+    // string is iso if XOR, 00 is true, 11 is true, rest is falsly
+    // 2nd way is to map the string twice, and see that the counts match, if len is off, auto fail.
+    if(input1.length() != input2.length()) return false;
+    if(input1.length() == 1) return true;
+    char[] strc1 = input1.toCharArray();
+    char[] strc2 = input2.toCharArray();
+    int count1 = 0;
+    int count2 = 0;
+    HashMap<Character, Integer> m1 = new HashMap<Character, Integer>();
+    HashMap<Character, Integer> m2 = new HashMap<Character, Integer>();
+    for(int i = 0;i<input1.length();i++) {
+        m1.put(strc1[i], count1+1);
+        m2.put(strc2[i], count2+1);
+        count1 = m1.get(strc1[i]);
+        count2 = m2.get(strc2[i]);
+        
+        if(m1.get(i) != m2.get(i)) return false;
+    }
+    
+    return true;
+}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

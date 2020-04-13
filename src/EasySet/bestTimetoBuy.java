@@ -1,6 +1,29 @@
 package EasySet;
 
 class bestTimetoBuy {
+	//REPLICA
+	public static int maxGain(int[] a) {
+	    int p = 0;
+	    int m = 0;
+	    if(a.length == 0) return 0;
+	    //1 oporation
+	    int min = a[0];
+	    for(int i = 1;i<a.length;i++) {
+	        if(min < a[i]) {
+	            //norm case
+	            p = a[i] - min;
+	            if(m <= p) {
+	                m = p;
+	            }
+	        } else {
+	            //op case, so set p to last gain
+	            min = a[i];
+	        }
+	    }
+	   
+	    return m;
+
+	}
     public int maxProfit(int[] prices) {
         int profit = 0;
         if(prices.length == 0) {
