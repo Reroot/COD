@@ -21,6 +21,7 @@ public class findTheMiddleOfaLinkedList {
 	// You don't need any other imports.
 //	Runtime Complexity
 //	O(n) and space O(1)
+	//first try 15mins
 	public ListNode findMiddleNode(ListNode head) {
 	    //we have a slow pointer and a fast pointer, when fast pointer is null then we have our
 	    //mid as it moves 2x as fast and slow is half that, ie mid. 
@@ -34,6 +35,19 @@ public class findTheMiddleOfaLinkedList {
 	                fast = fast.next.next;
 	    }
 	    return slow;
+	}
+	//2n try minuites
+	public ListNode findMiddleNode2(ListNode head) {
+	    ListNode slow = head;
+	    ListNode fast = head;
+	    if(head == null) return null;
+	    while(fast.next != null && fast.next.next != null) {
+	        slow = slow.next;
+	        fast = fast.next.next;
+	    }
+	    
+	    return slow;
+
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
