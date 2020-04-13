@@ -9,7 +9,7 @@ public class deleteTheHeadNodeOfCircularLinkedList {
         ListNode prev = null;
         ListNode curr = head;
         
-        
+          
         while(curr != null) {
             prev = curr;
             curr = curr.next;
