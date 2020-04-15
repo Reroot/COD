@@ -54,11 +54,12 @@ package EasySet;
 // Approach #2 Using Extra Array [Accepted]
 // Algorithm
 
-// We use an extra array in which we place every element of the array at its correct position i.e. the number at index ii in the original array is placed at the index (i+k)%(length of array)(i+k). Then, we copy the new array to the original one.
-
+// We use an extra array in which we place every element of the array at its correct 
+//position i.e. the number at index ii in the original array is placed at the index (i+k)%(length of array)(i+k). Then, we copy the new array to the original one.
+//oerwrite
 // Java
 
-public class Solution {
+public class RotateArray {
     public void rotate(int[] nums, int k) {
         int[] a = new int[nums.length];
         for (int i = 0; i < nums.length; i++) {

@@ -1,7 +1,13 @@
 15min Main Question
-You have a 25gb file of words on each line, You only have 2gb of Ram to process it, Sort it Alphabetically, how would it be done?  
+You have a 25gb file of words on each line, You only have 2gb of Ram to process it, 
+Sort it Alphabetically, how would it be done?  
 
-Quicksort a fragment 1/10 of the file, using an ARRAYLIST to go both directions (linkedlist is unilateral), then use merge sort to combine the 10 files. 
+	Quicksort a fragment 1/10 of the file, 
+	
+	using an ARRAYLIST to go both directions (linkedlist is unilateral), 
+	then use 
+	
+	merge sort to combine the 10 files. 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
 
 Create a system design, that covers everything. You want to fly a plane to los-angeles with a controller to pick up a friend and bring him to home in seatac, you want to do this without leaving your house or going to los angeles. How would you create a system to do this?
