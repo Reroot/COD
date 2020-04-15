@@ -22,6 +22,30 @@ public class isIsomorphic {
 //	Input 1 : abcabc 
 //	Input 2 : xbexyz
 //	Output  : false
+	
+	//THIS MAKEES MORE SENSE AT LINE 40 as we are getting the char to get the value
+	public static boolean isIsomorphicKey(String input1, String input2) {
+	    //occ can be remaed if counts are the same, and amount of keys are the same in 
+	    //the map
+	    if(input1.length() != input2.length()) return false;
+	    HashMap<Character, Integer> m1 = new HashMap<Character, Integer>();
+	    HashMap<Character, Integer> m2 = new HashMap<Character, Integer>();
+	    char[] c1s = input1.toCharArray();
+	    char[] c2s = input2.toCharArray();
+	    
+	    for(int i=0;i<input1.length();i++) {
+	        m1.put(c1s[i], m1.getOrDefault(c1s[i], 1)+1);
+	        m2.put(c2s[i], m2.getOrDefault(c2s[i], 1)+1);
+	        
+	        if(m1.get(c1s[i]) != m2.get(c2s[i])) {
+	            return false;
+	        }
+	    }
+	    return true; 
+	    
+	}
+	
+	
 	public static boolean isIso(String s1, String s2) {
 		//use char to match with the count of the other
 		if(s1.length() != s2.length()) return false;
@@ -31,6 +55,8 @@ public class isIsomorphic {
 			hs1.put(s1.charAt(i), hs1.getOrDefault(s1.charAt(i), 1) + 1);
 			hs2.put(s2.charAt(i), hs2.getOrDefault(s2.charAt(i), 1) + 1);
 			//during
+			System.out.println(hs1.get(i));
+			System.out.println(hs2.get(i));
 			if(hs1.get(i) != hs2.get(i)) {
 				return false;
 			}
@@ -74,7 +100,7 @@ public static boolean isIsomorphic(String input1, String input2) {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		isIso("hsdt", "dssv");
 	}
 
 }
