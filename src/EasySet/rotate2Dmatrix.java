@@ -1,5 +1,5 @@
 package EasySet;
-public class Solution {
+public class rotate2Dmatrix {
     public void rotate(int[][] matrix) {
         for(int i = 0; i<matrix.length; i++){
             for(int j = i; j<matrix[0].length; j++){
@@ -9,6 +9,7 @@ public class Solution {
                 matrix[j][i] = temp;
             }
         }
+        
         for(int i =0 ; i<matrix.length; i++){
             for(int j = 0; j<matrix.length/2; j++){
                 int temp = 0;
