@@ -1,3 +1,6 @@
+import java.util.Collections;
+import java.util.HashMap;
+
 class fruitIntoBaskets {
 //     Java:
 // Time O(N), Space O(N)
