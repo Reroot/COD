@@ -1,6 +1,6 @@
 package EasySet;
-traverse the string record the last index of each char.
-using pointer to record end of the current sub string.
+//traverse the string record the last index of each char.
+//using pointer to record end of the current sub string.
 public List<Integer> partitionLabels(String S) {
         if(S == null || S.length() == 0){
             return null;
@@ -23,3 +23,4 @@ public List<Integer> partitionLabels(String S) {
         }
         return list;
     }
+}
