@@ -15,9 +15,10 @@ public class removeDupsFromStringArray {
 	    // Output: [Hello, Hey, Hi]
 	    // 1: String set to removeDuplicates
 	    // 2: HashMap add all once, don't add it if map already contains
+		// works, after a collection sort
 		ArrayList<String> ls = new ArrayList<String>();
-		
 	    Hashtable<String, Integer> map = new Hashtable<String, Integer>();
+	    
 	    for(String s : input) {
 	        if(map.get(s) == null) { // if value is already 1, dont add to list
 	        	map.put(s, 1);
