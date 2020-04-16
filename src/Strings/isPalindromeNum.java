@@ -1,3 +1,5 @@
+package Strings;
+
 class isPalindromeNum {
     public boolean isPalindromeNum(int x) {
         String s = Integer.toString(x);
