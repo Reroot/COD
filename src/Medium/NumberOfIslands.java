@@ -18,6 +18,7 @@ class Solution {
 	        // Store the given grid
 	        // This prevents having to make copies during recursion
 	        g = grid;
+	        
 
 	        // Our count to return
 	        int c = 0;
