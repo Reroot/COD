@@ -1,6 +1,7 @@
 package FireCode;
 
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Set;
 
 //Find the first non-duplicate character in a string. Return null if no unique character is found.
@@ -29,7 +30,26 @@ public class firstUniqueCharNonDup {
 	    }
 	    return null;
 	}
-	
+	//2nd ret pass
+	public static Character firstNonRepeatedCharacter2(String str) {
+		//non dup means count is 1 absolutly
+		//the first means the first iteration left to right
+		    if(str == null) return null;
+		    Hashtable<Character, Integer> map = new Hashtable<Character, Integer>();
+		    for(int i = 0;i<str.length();i++) {
+		        if(map.containsKey(str.charAt(i))) {
+		            map.put(str.charAt(i), map.get(str.charAt(i))+1);//if value not there set to 1
+		        } else {
+		            map.put(str.charAt(i), 1);//if value not there set to 1
+		        }
+		    }
+		    for(int i = 0;i<str.length();i++) {
+		        if(map.get(str.charAt(i)) == 1) {//get the count
+		            return str.charAt(i);
+		        }
+		    }
+		    return null;
+		}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
