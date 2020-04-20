@@ -22,7 +22,6 @@ public class movingAvgDataStream {
     	} 
     	//else slide , by removing the head
     	sum = sum - list.poll();
-    	
 		return sum/size;
 
     }

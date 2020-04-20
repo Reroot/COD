@@ -20,7 +20,19 @@ package FireCode;
 //6. At the end of the loop, compare the reverse number with the input. If they match, return true else, false.
 
 public class IntegerPalindrome {
+	public static Boolean isIntPalindrome(int x) {            
+	    int rev = 0;
+	    if(x == 1) return true;
+	    int rem = 0;
+	    
+	    while(x > 0) {
+	        rev = rev * 10 + rev % 10;
+	        x = x / 10;
+	    }
 
+	    return rev==x;
+	    
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
