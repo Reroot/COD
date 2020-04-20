@@ -17,6 +17,13 @@ public class insertNewNodeAtHead {
 	        return newH;
 	}
 	
+	public ListNode insertAtHead3(ListNode head, int data) {
+	    ListNode newHead = new ListNode(data);
+	    //newHead.data = data;
+	    newHead.next = head;
+	    return newHead;
+	}
+	
 	public ListNode insertAtHead2(ListNode head, int data) {
 	    ListNode insert = new ListNode(data);
 	    if(head != null) {
