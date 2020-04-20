@@ -18,13 +18,11 @@ public class longestSubWithKDistinctSlidingWindow {
 	            charset[letter]--;
 	            if (charset[letter] == 0) numDistinct--;
 	        }
-	        
 	        maxLen = hi - lo + 1;
 	    }
 	    return maxLen;
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		lengthOfLongestSubstringKDistinct("abcadcacacaca", 2);
 	}
 
