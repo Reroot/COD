@@ -22,6 +22,27 @@ public class reverseInteger {
 		return rev;
 	}
 	
+	public static int reverseInt3(int x) {
+	    return reverseInt33(x, 0);
+	}
+	public static int reverseInt33(int x, int nx) {
+	    if(x==0) return nx;//x acts a num
+	    return reverseInt33(x/10, (nx*10)+x%10);
+	}
+	
+	//fail on negative
+	public static int reverseInt(int x) {
+        int num = x;
+        //int rem = 0;
+        int rev = 0;
+        while(num > 0) {//doesn't accept negatives
+            rev = rev*10 + num%10;
+            num = num / 10; //acts as rem and to break loop
+        }
+        return rev;
+    
+}
+	
 	public static void main(String[] args) {
 		System.out.println(rev(100));
 		rev(100);

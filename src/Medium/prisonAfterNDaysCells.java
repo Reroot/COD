@@ -1,4 +1,8 @@
+package Medium;
+
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 // There are 8 prison cells in a row, and each cell is either occupied or vacant.
 
@@ -34,8 +38,8 @@ import java.util.HashMap;
 // Note:
 
 //integer to string
-
-// cells.length == 8
+class prisonAfterNDaysCells {
+	// cells.length == 8
 // cells[i] is in {0, 1}
 // 1 <= N <= 10^9
 public int[] prisonAfterNDays(int[] cells, int N) {
@@ -51,6 +55,8 @@ public int[] prisonAfterNDays(int[] cells, int N) {
         }
     }
     return cells;
+}
+
 }
 
 
@@ -78,4 +84,4 @@ public int[] prisonAfterNDays(int[] cells, int N) {
 //             keyArr.add(cells);
 //         }
 //     }
-}
+//}

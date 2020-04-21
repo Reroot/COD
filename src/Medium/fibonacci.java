@@ -1,3 +1,5 @@
+package Medium;
+
 //Fibonacci Series using Recursion 
 class fibonacci { 
 	//recursive

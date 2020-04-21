@@ -17,6 +17,15 @@ public class selectionSort {
 //	    {} -> [Empty] Array 
 	public static int[] selectionSortArray(int[] arr){
 		//two forloops until the array is crushed and greater and lower are swaped
+		for(int i = 0;i<arr.length;i++) {
+			for(int j = i+1;j<arr.length;j++) {
+				if(arr[i] > arr[j]) {
+					int temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
 	    return arr;
 	}
 	public static void main(String[] args) {

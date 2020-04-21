@@ -1,11 +1,17 @@
 package FireCode;
 
 public class deleteTheHeadNodeOfCircularLinkedList {
+	//read tjhe question your getting ti wrong becuas eof that, * i the tail
+//	Given a circular-linked list, write a function to delete its tail node and return the modified list's head.
+//			*x = indicates head node
+//			1->2->3->4->*1 ==> 1->2->3->*1
+	
+	
+	//fail 1
 	public ListNode deleteAtHead(ListNode head) {
         //we need the node before head and the node after head
         if(head == null) return null;
         if(head.next == head) return null;
-        
         ListNode prev = null;
         ListNode curr = head;
 
@@ -20,6 +26,23 @@ public class deleteTheHeadNodeOfCircularLinkedList {
         }
         return prev; 
 }
+	//fail 2
+	public ListNode deleteAtTail2(ListNode head) {
+	    if(head == null) return null;
+	    ListNode curr = head.next;
+	    ListNode prev = head;
+	    while(prev != head) {
+	        curr = curr.next;
+	        prev = prev.next;
+	            //this means curr is at tail
+	        if(curr == head && curr.data == head.data) {
+	            prev.next = curr.next;//ref the prev of curr to the next of curr
+	            curr = null;
+	            //now derefreance curr
+	        }
+	    }
+	    return head;
+	}
 //	Given a circular linked list, implement a method to delete its head node. Return the list's new head node.
 //
 //	*x = indicates head node
