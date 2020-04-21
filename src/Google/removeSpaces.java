@@ -1,6 +1,4 @@
 package Google;
-
-
 //your code good job
 public class removeSpaces {
 	private static String replaceAllSpaces(String inputString) {
