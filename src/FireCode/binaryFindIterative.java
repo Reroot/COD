@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-public class binaryFindIterative {
+public class binaryFindIterative {//ie level order
 	public static boolean findNode(TreeNode root, int val) {
 	    
 	    //iteration with trees requres a stack for order traversals, and que for level order

@@ -17,6 +17,17 @@ package FireCode;
 //
 //3. The slower node will invariably be pointing to the middle ListNode. Return slow
 public class findTheMiddleOfaLinkedList {
+	public ListNode findMiddleNode4(ListNode head) {
+	    if(head == null) return null;
+		if(head.next == null) return head;
+	    ListNode currslow = head;
+	    ListNode currfast = head;
+	    while(currfast.next != null && currfast.next.next != null) {
+	        currslow = currslow.next;
+	        currfast = currfast.next.next;
+	    }
+	    return currslow;
+	}
 	// java.util.* and java.util.streams.* have been imported for this problem.
 	// You don't need any other imports.
 //	Runtime Complexity
@@ -45,9 +56,7 @@ public class findTheMiddleOfaLinkedList {
 	        slow = slow.next;
 	        fast = fast.next.next;
 	    }
-	    
 	    return slow;
-
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

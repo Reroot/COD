@@ -8,15 +8,13 @@ public class deleteTheHeadNodeOfCircularLinkedList {
         
         ListNode prev = null;
         ListNode curr = head;
-        
-          
+
         while(curr != null) {
             prev = curr;
             curr = curr.next;
             if(prev.next == head) {
                 prev.next = curr.next;
                 curr = null;
-            
                 return prev.next;
             }
         }
