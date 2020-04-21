@@ -1,4 +1,4 @@
-package aznExp1;
+package AZN;
 
 import java.util.LinkedList;
 import java.util.Queue;

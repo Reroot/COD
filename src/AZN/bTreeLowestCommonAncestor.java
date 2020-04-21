@@ -1,4 +1,4 @@
-package aznExp1;
+package AZN;
 class Node {
 	Node left = null;
 	Node right = null;

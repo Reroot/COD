@@ -1,4 +1,4 @@
-package aznExp1;
+package AZN;
 //https://www.geeksforgeeks.org/amazon-interview-experience-sde-1-feb-2020-exp-1-5-yr/?ref=leftbar-rightbar
 public class numOfIslandsMatrix {
     private static int row;

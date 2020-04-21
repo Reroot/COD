@@ -1,4 +1,4 @@
-package aznExp1;
+package AZN;
 
 public class powOf2 {
     /*
