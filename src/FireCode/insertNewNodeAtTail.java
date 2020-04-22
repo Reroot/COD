@@ -21,7 +21,18 @@ public class insertNewNodeAtTail {
 	    return head; 
 	}
 	
-	
+	public ListNode insertAtTail1(ListNode head, int data) {
+	    ListNode d = head;
+	    ListNode s = new ListNode(data);
+	    if(head == null) return s;
+	    while(head.next != null) {
+	        head = head.next;
+	    }
+	    head.next = s;
+	    return d;
+
+
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
