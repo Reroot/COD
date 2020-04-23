@@ -1,12 +1,14 @@
 package FireCode;
+import java.util.ArrayList;
 import java.util.Stack; 
+
+
+
 
 //A binary tree node 
 class Node { 
-
 	int data; 
 	Node left, right; 
-
 	Node(int item) { 
 		data = item; 
 		left = right = null; 
@@ -14,8 +16,34 @@ class Node {
 } 
 
 class BinaryTree { 
+//failed try, updated a bit commented out mistakes
+public ArrayList<Integer> preorderItrFailedTry(Node root) {
+    ArrayList<Integer> treeList = new ArrayList<Integer>();
+    if(root == null) return null;
+    //preorder root,left, right
+    Node curr = root;
+    Stack<Node> stk = new Stack<Node>();
+    stk.push(curr);
+    while(!stk.isEmpty()) {
+        //stk.push(curr);//dont push inside
+		curr = stk.peek(); 
+        stk.pop();
+        treeList.add(curr.data);
+        if(curr.left != null) {
+            stk.push(curr.left);
+            //treeList.add(curr.data);
+        }
+        if(curr.right != null) {
+            stk.push(curr.right);
+            //treeList.add(curr.data);
+        }
+    }
+    return treeList;
+}
+	
 
-	Node root; 
+
+Node root; 
 	
 	void iterativePreorder() { 
 		iterativePreorder(root); 
