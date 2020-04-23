@@ -1,8 +1,9 @@
 package FireCode;
 
 class ListNode {
-	int data = 0;
+
 	ListNode next = null;
+	int data;
 	
 	ListNode(int x) {
 		data = x;

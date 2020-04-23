@@ -3,8 +3,6 @@ import java.util.ArrayList;
 import java.util.Stack; 
 
 
-
-
 //A binary tree node 
 class Node { 
 	int data; 
@@ -16,31 +14,53 @@ class Node {
 } 
 
 class BinaryTree { 
-//failed try, updated a bit commented out mistakes
-public ArrayList<Integer> preorderItrFailedTry(Node root) {
-    ArrayList<Integer> treeList = new ArrayList<Integer>();
-    if(root == null) return null;
-    //preorder root,left, right
-    Node curr = root;
-    Stack<Node> stk = new Stack<Node>();
-    stk.push(curr);
-    while(!stk.isEmpty()) {
-        //stk.push(curr);//dont push inside
-		curr = stk.peek(); 
-        stk.pop();
-        treeList.add(curr.data);
-        if(curr.left != null) {
-            stk.push(curr.left);
-            //treeList.add(curr.data);
-        }
-        if(curr.right != null) {
-            stk.push(curr.right);
-            //treeList.add(curr.data);
-        }
-    }
-    return treeList;
-}
+	public ArrayList<Integer> preorderItr3(TreeNode root) {
+	    TreeNode curr = root;
+	    Stack<TreeNode> stk = new Stack<TreeNode>();
+	    ArrayList<Integer> al = new ArrayList<Integer>();    
+	    //root,left,right
+	    if(root == null) return al;
+	    stk.push(curr);
+	    while(!stk.isEmpty()) {
+	        curr = stk.pop();
+	        al.add(curr.data);
+	        if(curr.right != null) {//FIFO, the first out will then be, go with the right first becuase they will be last out
+	            stk.push(curr.right);
+	        }        
+	        if(curr.left != null) {
+	            stk.push(curr.left);
+	        }
+	    }
+	    return al;
+	}
 	
+	//bottom is WRONG BECUASE FIFO stack so go rootrightleft
+//failed try, updated a bit commented out mistakes
+	//winning try
+	public ArrayList<Integer> preorderItrFailedTry(Node root) {
+	    ArrayList<Integer> treeList = new ArrayList<Integer>();
+	    if(root == null) return null;
+	    //preorder root,left, right
+	    Node curr = root;
+	    Stack<Node> stk = new Stack<Node>();
+	    stk.push(curr);
+	    while(!stk.isEmpty()) {
+	        //stk.push(curr);//dont push inside
+			curr = stk.peek(); 
+	        stk.pop();
+	        treeList.add(curr.data);
+	        if(curr.left != null) {
+	            stk.push(curr.left);
+	            //treeList.add(curr.data);
+	        }
+	        if(curr.right != null) {
+	            stk.push(curr.right);
+	            //treeList.add(curr.data);
+	        }
+	    }
+	    return treeList;
+	}
+		
 
 
 Node root; 
@@ -93,7 +113,7 @@ Node root;
 		tree.iterativePreorder(); 
 
 	} 
-} 
 
+}
 //This code has been contributed by Mayank Jaiswal 
 
