@@ -20,6 +20,17 @@ public class insertNewNodeAtTail {
 	    curr.next = newNode;
 	    return head; 
 	}
+	public ListNode insertAtTail3(ListNode head, int data) {
+	    ListNode newNode = new ListNode(data);
+	    ListNode dummyH = head;
+	    if(dummyH == null) return newNode;
+	    //stop 0->null, stop at last node b4 null
+	    while(dummyH.next != null) {//stop at head, becuase next is null
+	        dummyH = dummyH.next;
+	    }
+	    dummyH.next = newNode;
+	    return head;
+	}
 	
 	public ListNode insertAtTail1(ListNode head, int data) {
 	    ListNode d = head;
@@ -30,8 +41,6 @@ public class insertNewNodeAtTail {
 	    }
 	    head.next = s;
 	    return d;
-
-
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
