@@ -10,7 +10,7 @@ package Google;
 // Explanation: The next closest time choosing from digits 1, 9, 3, 4, is 19:39, which occurs 5 minutes later. It is not 19:33, because this occurs 23 hours and 59 minutes later.
 import java.util.*;
 
-class nextClosestTimeGoogle() {
+class nextClosestTimeGoogle {
     public String nextClosestTimeGoogle(final String time) {
         //convert to minuites, parse the string
         int mins = Integer.parseInt(time.substring(0, 2)) * 60;
@@ -38,5 +38,4 @@ class nextClosestTimeGoogle() {
     
     
     }
-}
 }

@@ -17,6 +17,7 @@ public class ButtonListenerNewWay {
 //       });  
       b.addActionListener(e -> System.out.println(e + "This is the event obj")); 
       frame.add(b);
+  
       frame.setSize(200,200);  
       frame.setLayout(null);  
       frame.setVisible(true);   

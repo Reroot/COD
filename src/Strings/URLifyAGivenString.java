@@ -1,4 +1,4 @@
-// Write a method to replace all the spaces in a string with ‘%20’. You may assume that the string has sufficient space at the end to hold the additional characters, and that you are given the “true” length of the string.
+// Write a method to replace all the spaces in a string with â€˜%20â€™. You may assume that the string has sufficient space at the end to hold the additional characters, and that you are given the â€œtrueâ€� length of the string.
 
 // Examples:
 
@@ -13,7 +13,7 @@
 // A better solution to do in-place assuming that we have extra space in input string. We fist count number of spaces in input string. Using this count, we can find length of the modified (or result) string. After computing new length we fill the string in-place from end.
 
 public String URLifyAGivenString(String s) {
-    char[] fresh = new char[s.length * 2];
+    char[] fresh = new char[s.length() * 2];
     Stringbuilder sb = new Stringbuilder();
     for(int i = 0;i<s.length();i++) {
         if(s.charAt(i) == " ") {

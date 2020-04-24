@@ -6,6 +6,7 @@ public class licenseKeyFormatting {
        S = S.replaceAll("-", "");
        StringBuilder sb = new StringBuilder(S);
        for(int i = S.length()-K;i>0;i=i-K){
+    	   //sb.substring(K, S.length());
            System.out.println(i);
            sb.insert(i, "-");
        }
@@ -13,7 +14,8 @@ public class licenseKeyFormatting {
     }
 
 	public static void main(String[] args) {
-		licenseKeyFormatting("5F3Z-2e-9-w", 4);
+		System.out.println(licenseKeyFormatting("5F3Z-2e-9-w", 4));
+		
 	}
 }
 //var licenseKeyFormatting = function(S, K) {

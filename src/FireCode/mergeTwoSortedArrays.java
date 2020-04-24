@@ -10,10 +10,10 @@ public class mergeTwoSortedArrays {
 		//sort the sorted by leftmost
 		while(indleft < lenLeft && indRight < indRight) {//fill the array
 			if(arrLeft[indleft++] < arrRight[indRight++]) {
-				merged[indleft++] = arrLeft[indleft++];
+				merged[indMerged++] = arrLeft[indleft++];
 			} else {
-				merged[indleft++] = arrRight[indRight++];
-			}
+				merged[indMerged++] = arrRight[indRight++];
+			} 
 		}
 		while(indleft < lenLeft) {
 			merged[indleft] = arrLeft[lenLeft];

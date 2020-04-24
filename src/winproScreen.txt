@@ -43,7 +43,7 @@ the third one being the literal "base" in the concat statement.
 final vs Immutability in Java
 final :--- In Java, final is a modifier which is used for class, method and variable also. When a variable is declared with final keyword, it’s value can’t be modified, essentially, a constant.
 Immutability :-- In simple terms, immutability means unchanging over time or unable to be changed. In Java, we know that String objects are immutable means we cant change anything to the existing String objects.
-
+final methods cant be overriddern
 Differences between final and immutability
 
 final --- means that you can’t change the object’s reference to point to another reference or another object, but you can still mutate its state (using setter methods e.g). 
