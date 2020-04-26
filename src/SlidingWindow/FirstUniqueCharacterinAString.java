@@ -1,3 +1,7 @@
+package SlidingWindow;
+
+import java.util.HashMap;
+
 // Hey guys. My solution is pretty straightforward. It takes O(n) and goes through the string twice:
 
 // Get the frequency of each character.
@@ -19,8 +23,7 @@ class Solution {
     }
 
 
-class Solution {
-    public int firstUniqChar(String s) {
+    public int firstUniqChar2(String s) {
         HashMap<Character, Integer> count = new HashMap<Character, Integer>();
         int n = s.length();
         // build hash map : character and how often it appears

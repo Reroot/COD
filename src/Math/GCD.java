@@ -1,3 +1,5 @@
+package Math;
+
 // Java program to demonstrate working of extended 
 // Euclidean Algorithm
 // Basic Euclidean Algorithm for GCD

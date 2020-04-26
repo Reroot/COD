@@ -14,7 +14,7 @@ class reverseLinkedList {
         ListNode curr = head;
 
         while(curr != null) {
-            ListNode temp = curr.next;
+            ListNode temp = curr.next;//preserve iteration
             curr.next = prev;//flip pointers
             prev = curr;//ready prev for next flip
             curr = temp;//orginal place iteration flow

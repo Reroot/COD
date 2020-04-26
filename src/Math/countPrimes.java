@@ -1,3 +1,5 @@
+package Math;
+
 class countPrimes {
 
 	public static void main(String[] args) 

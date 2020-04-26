@@ -1,9 +1,9 @@
 package LinkedLists;
 
 public class ListNode {
-	int data;
-	ListNode next;
-	ListNode(int val) {
+	public int data;
+	public ListNode next;
+	public ListNode(int val) {
 	  this.data = val;
 	}
 }

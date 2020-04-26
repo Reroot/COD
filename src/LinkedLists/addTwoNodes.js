@@ -1,4 +1,5 @@
-public class Solution {
+package LinkedLists;
+public class addTwoNodes {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode prev = new ListNode(0);
         ListNode head = prev;
