@@ -17,7 +17,7 @@ class swapPairs {
             curr.next = sec;
             curr.next.next = first;//USE the new 1 switched, it's ahead now, we can set it to curr to coiuint
             //our iteration from first;
-            curr = curr.next.next;//go to the pointer of 2->
+            curr = curr.next.next;//go to the pointer of, [2]->1->3
         }
         return dummy.next;
     }
