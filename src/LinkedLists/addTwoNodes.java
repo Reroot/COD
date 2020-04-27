@@ -6,8 +6,8 @@ public class addTwoNodes {
         int carry = 0;
         while (l1 != null || l2 != null || carry != 0) {
             ListNode cur = new ListNode(0);
-            int sum = ((l2 == null) ? 0 : l2.val) + ((l1 == null) ? 0 : l1.val) + carry;
-            cur.val = sum % 10;
+            int sum = ((l2 == null) ? 0 : l2.data) + ((l1 == null) ? 0 : l1.data) + carry;
+            cur.data = sum % 10;
             carry = sum / 10;
             prev.next = cur;
             prev = cur;

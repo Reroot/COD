@@ -1,4 +1,4 @@
-package FireCode;
+package LinkedLists;
 
 import LinkedLists.ListNode;
 
