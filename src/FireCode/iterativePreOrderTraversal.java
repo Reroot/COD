@@ -14,9 +14,9 @@ class Node {
 } 
 
 class BinaryTree { 
-	public ArrayList<Integer> preorderItr3(TreeNode root) {
-	    TreeNode curr = root;
-	    Stack<TreeNode> stk = new Stack<TreeNode>();
+	public ArrayList<Integer> preorderItr3(Node root) {
+		Node curr = root;
+	    Stack<Node> stk = new Stack<Node>();
 	    ArrayList<Integer> al = new ArrayList<Integer>();    
 	    //root,left,right
 	    if(root == null) return al;

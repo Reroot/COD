@@ -19,7 +19,7 @@ class reverseLinkedList {
             prev = curr;//ready prev for next flip
             curr = temp;//orginal place iteration flow
         }
-        return prev;
+        return prev;//THE LAST NOW IS THE NEW HEAD OF THE REVERSED LIST!!!!
     } 
 
 

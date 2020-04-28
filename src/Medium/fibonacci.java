@@ -27,11 +27,10 @@ class fibonacci {
 		return fibs[n];
 	} 
 	
-	public static void main (String args[]) 
-	{ 
-	int n = 6; 
-	System.out.println(fib(n)); 
-	System.out.println(fibArr(n)); 
+	public static void main (String args[]) { 
+		int n = 6; 
+		System.out.println(fib(n)); 
+		System.out.println(fibArr(n)); 
 
 	} 
 } 

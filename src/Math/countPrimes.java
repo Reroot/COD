@@ -12,7 +12,6 @@ class countPrimes {
         for (int i = 0; i < primes.length; i++) {
             primes[i] = true;
         }
-
         //no point in checking number and it's square becuase no primes exist
         //between it and it's square i->i*i there are no primes. 
         for (int i = 2; i * i < primes.length; i++) {
@@ -28,9 +27,7 @@ class countPrimes {
                 primeCount++;
             }
         }
-
         return primeCount;
-
     }
     public int countPrimesB(int n) {
 
