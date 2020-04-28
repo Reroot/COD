@@ -18,6 +18,24 @@ import java.util.TreeMap;
 //standard string representation of most data structures, and
 //Arrays.sort() to sort your result.
 public class duplicates {
+	//first try
+	public static String duplicate5(int[] numbers){
+	    TreeMap<Integer, Integer> map = new TreeMap<Integer, Integer>();
+	    for(int i = 0;i<numbers.length;i++) {
+	        map.put(numbers[i], map.getOrDefault(numbers[i], 0)+1);//key=num , value=count, knowing the key beforehand makes everything
+	    }
+	    //StringBuilder sb = new StringBuilder();
+	    Set<Integer> keys = map.keySet();
+	    ArrayList<Integer> arr = new ArrayList();
+	    for(Integer k : keys) {
+	        if(map.get(k)>1) {
+	            //sb.append(k);
+	            arr.add(k);
+	            //it's a dup
+	        }
+	    }
+	    return String.valueOf(arr);
+	}
 //	Runtime Complexity
 //	O(n log(n))
 	public static String duplicate2(int[] numbers){
