@@ -2,9 +2,6 @@ package LinkedLists;
 
 import java.util.*;
 
-
-
-
 public class binaryTreeInOrderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<Integer>();
