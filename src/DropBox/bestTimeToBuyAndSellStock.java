@@ -24,6 +24,7 @@ package DropBox;
 
 //fixed with help
 public class bestTimeToBuyAndSellStock { 
+	
     public int maxProfitMulti(int[] prices) {
         //you buy and sell everytime if there's a diffrince, instead of checking for a max profit and having only one execution.
         int total = 0;

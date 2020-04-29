@@ -1,4 +1,4 @@
-package BinaryTrees;
+package FireCode;
 
 import java.util.PriorityQueue;
 import java.util.Stack;
@@ -16,7 +16,7 @@ public class kthSmallestInBST {
 	         if(--k == 0) break;
 	         root = root.right;
 	     }
-	     return root.val;
+	     return root.data;
 	 }
 	 //Really good
 	 public int kthSmallestRecursive2(TreeNode root, int k) {
@@ -32,7 +32,7 @@ public class kthSmallestInBST {
 	        if (root == null) return;
 	        createHeap(heap, root.left);
 	        createHeap(heap, root.right);
-	        heap.offer(root.val);
+	        heap.offer(root.data);
 	    }
 	//Passing own solution <3 
     public int kthSmallest1(TreeNode root, int k) {
@@ -46,7 +46,7 @@ public class kthSmallestInBST {
                 curr = curr.left;
             }//once we are at the bbotth we have the smallest
             curr = stk.pop();
-            pq.offer(curr.val);
+            pq.offer(curr.data);
             curr = curr.right;
         }
         while(k-- > 1) {

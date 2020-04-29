@@ -1,6 +1,7 @@
-package LinkedLists;
+package BinaryTrees;
 
 import java.util.*;
+
 
 public class binaryTreeInOrderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
@@ -15,7 +16,7 @@ public class binaryTreeInOrderTraversal {
                 cur = cur.left;
             }
             cur = stack.pop();
-            list.add(cur.data);
+            list.add(cur.val);
             cur = cur.right;
         }//Inorder (Left, Root, Right
 
