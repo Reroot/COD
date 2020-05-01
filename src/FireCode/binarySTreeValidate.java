@@ -1,5 +1,7 @@
 package FireCode;
 
+import java.util.Stack;
+
 public class binarySTreeValidate {
 	
 	public static boolean validateBST(TreeNode root) {
@@ -15,7 +17,7 @@ public class binarySTreeValidate {
 		         root = root.left;
 		      }
 		      root = stack.pop();
-		      if(pre != null && root.val <= pre.val) return false;
+		      if(pre != null && root.data <= pre.data) return false;
 		      pre = root;
 		      root = root.right;
 		   }

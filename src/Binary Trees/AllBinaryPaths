@@ -1,0 +1,13 @@
+public List<String> binaryPaths(TreeNode root) {
+    List<String> paths = new ArrayList<String>();
+    if(root != null) { 
+      findPaths(root, "", paths);
+    }
+    return paths;
+}
+
+public void findPaths(TreeNode r, String s, List p) {
+  if(root == null && root.right == null) p.add(root.val + s);
+  if(root.left != null) findPaths(r.left,->", p);
+  if(root.right != null) findPaths(r.right, "->", p);
+}

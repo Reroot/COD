@@ -6,7 +6,7 @@ public class binaryTreeMirror {
 	static void mirror(Node root) { 
 	    if (root == null) 
 	        return; 
-	    Queue<Node> q = (Queue<Node>) new LinkedHashSet<Node>(); 
+	    Queue<Node> q = new LinkedList<Node>(); 
 	    q.add(root); 
 	    // Do BFS. While doing BFS, keep swapping 
 	    // left and right children 
@@ -14,12 +14,10 @@ public class binaryTreeMirror {
 	        // pop top node from queue 
 	        Node curr = q.peek(); 
 	        q.remove(); 
-
 	        // swap left child with right child 
 	        Node temp = curr.left; 
 	        curr.left = curr.right; 
 	        curr.right = temp;
-	  
 	        // push left and right children 
 	        if (curr.left != null) 
 	            q.add(curr.left); 

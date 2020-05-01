@@ -5,7 +5,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry including=".classpath|.project|.settings/|AbstractionSample/|Amazon/|BackEndDevQuestions.txt|Basic/|Binary Trees/|BinaryTrees/|Collections/|DropBox/|Dynamic Programing &amp; Cache/|Encapsulation/|FileHandling/|FireCode/|Google/|GoogleFreeBalling/|HashTable&amp;HashMap.txt|Heaps/|How HashMap works in Java.jpg|Lamdas/|LinkedList/|LinkedLists/|Math/|Medium/|OOPScreen.txt|OOPscreen2.txt|Patterns/|QuickSortVsMergeSort.png|Search/|Serialization/|Sets/|SlidingWindow/|Solution.class|Sorting/|Stacks-Queues/|Strings/|TATAInterviewQQ.txt|Tests/|Threads/|abstraceVSInterface.png|advScreen.txt|binaryTreeMinDepth.class|binaryTreeMinDepth.java|equalsAndHashcode.txt|levelOrderBST.class|levelOrderBST.java|mapsDiffrences.png|overLappingRectangles.class|overLappingRectangles.java|removeDuplicatesFromSortedArray.java|reverseBits.class|reverseBits.java|reverseString.class|reverseString.java|sm.txt|tm.txt|twoSumClassic.class|twoSumClassic.java|winproScreen.txt" kind="src" path="src"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="src"/>
 </classpath>
